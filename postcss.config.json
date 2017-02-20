@@ -1,0 +1,21 @@
+{
+  "use": [
+    "precss",
+    "postcss-strip-inline-comments",
+    "postcss-short",
+    "postcss-shopify-settings-variables",
+    "autoprefixer",
+    "postcss-math",
+    "postcss-calc",
+    "postcss-media-fn",
+    "postcss-font-magician"
+  ],
+  "syntax": "postcss-scss",
+  "input": "styles/theme-name.css",
+  "output": "theme/assets/theme-name.css.liquid",
+  "local-plugins": true,
+  "autoprefixer": {
+    "browsers": "> 5%"
+  },
+  "precss": {}
+}
