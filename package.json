@@ -29,8 +29,7 @@
     "postcss-short": "^3.0.3",
     "postcss-strip-inline-comments": "^0.1.5",
     "precss": "^1.4.0",
-    "rerun-script": "^0.6.0",
-    "sugarss": "^0.2.0"
+    "rerun-script": "^0.6.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
