@@ -1,0 +1,46 @@
+{
+  "name": "postcss-shopify-theme-starter",
+  "version": "1.0.0",
+  "description": "A Shopify theme starter with Timber and PostCSS (allows for partials and other magic)",
+  "author": "justin hough",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinhough/postcss-shopify-theme-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justinhough/postcss-shopify-theme-starter/issues"
+  },
+  "homepage": "https://github.com/justinhough/postcss-shopify-theme-starter",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "npm-run-series": "^1.0.0",
+    "parallelshell": "^2.0.0",
+    "postcss": "^5.2.12",
+    "postcss-automath": "^1.0.1",
+    "postcss-calc": "^5.3.1",
+    "postcss-cli": "^2.6.0",
+    "postcss-font-magician": "^1.6.0",
+    "postcss-inline-comment": "^3.0.0",
+    "postcss-math": "0.0.7",
+    "postcss-media-fn": "^2.0.0",
+    "postcss-scss": "^0.4.1",
+    "postcss-shopify-settings-variables": "^0.1.4",
+    "postcss-short": "^3.0.3",
+    "postcss-strip-inline-comments": "^0.1.5",
+    "precss": "^1.4.0",
+    "rerun-script": "^0.6.0",
+    "sugarss": "^0.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "postcss -c postcss.config.json",
+    "prestart": "npm-run-series css",
+    "start": "parallelshell 'rerun-script'"
+  },
+  "watches": {
+    "css": [
+      "styles/**/*.css"
+    ]
+  }
+}
