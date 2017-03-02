@@ -1,0 +1,7 @@
+body {
+  background-color: $colorPrimary;
+
+  .header {
+    color: $colorSecondary;
+  }
+}
