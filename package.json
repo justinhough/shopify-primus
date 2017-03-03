@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A Shopify theme starter with Timber and PostCSS (allows for partials and other magic)",
   "author": "justin hough",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/justinhough/postcss-shopify-theme-starter.git"
