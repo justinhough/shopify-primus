@@ -1,14 +1,15 @@
 # PostCSS Shopify Theme Starer
 
-This is a shopify starter theme built with PostCSS.
+This is a Shopify starter theme built with PostCSS.
 
 It's preconfigured so that you can use the familiar syntax of variables, mixins, conditionals, and more. Check out each plugin or the documentation (coming soon) for the full range of options.
 
-## Usage
 
-- Step 1: `npm install`
-- Step 2: Start writing CSS.
-- Step 3: Repeat step 2.
+## Get Started
+
+- Download the latest release
+- Clone the repo git clone https://github.com/justinhough/postcss-shopify-theme-starter.git
+- Run `npm install` (for all dependencies)
 
 
 ## Plugins
@@ -26,3 +27,42 @@ It's preconfigured so that you can use the familiar syntax of variables, mixins,
 - [postcss-short](https://github.com/jonathantneal/postcss-short)
 - [postcss-strip-inline-comments](https://github.com/mummybot/postcss-strip-inline-comments)
 - [precss](https://github.com/jonathantneal/precss)
+
+
+## TODOS
+- [ ] sync with Shopify DEV store
+- [ ] add basic layout and snippets for basic page / component structure
+- [ ] include locales (languages) for de, en, es, fr, pt-BR, and pt-PT
+- [ ] build templates for:
+  - [ ] home
+  - [ ] article
+  - [ ] blog
+  - [ ] cart
+  - [ ] collection
+  - [ ] collection list
+  - [ ] gift card
+  - [ ] contact
+  - [ ] page
+  - [ ] product
+  - [ ] search
+  - [ ] customer - account
+  - [ ] customer - activate account
+  - [ ] customer - addresses
+  - [ ] customer - login
+  - [ ] customer - order
+  - [ ] customer - register
+  - [ ] customer - reset password
+  - [ ] 404
+- [ ] basic theme testing
+
+## Support
+
+Get involved with Timber or follow along with updates and news.
+
+- Submit and track all issues / feature requests on Github.
+- Follow author [@jrhough](http://twitter.com/jrhough) and ask questions on Twitter.
+
+
+## License
+
+PostCSS Shopify Theme Starer is released under the MIT License.
