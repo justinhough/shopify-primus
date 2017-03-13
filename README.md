@@ -57,7 +57,7 @@ It's preconfigured so that you can use the familiar syntax of variables, mixins,
 
 ## Support
 
-Get involved with Timber or follow along with updates and news.
+Get involved and follow along with updates.
 
 - Submit and track all issues / feature requests on Github.
 - Follow author [@jrhough](http://twitter.com/jrhough) and ask questions on Twitter.
