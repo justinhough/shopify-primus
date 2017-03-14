@@ -1,5 +1,6 @@
 {
   "use": [
+    "postcss-simple-vars",
     "precss",
     "postcss-strip-inline-comments",
     "postcss-short",
@@ -8,7 +9,9 @@
     "postcss-math",
     "postcss-calc",
     "postcss-media-fn",
-    "postcss-font-magician"
+    "postcss-font-magician",
+    "postcss-discard-empty",
+    "postcss-discard-duplicates"
   ],
   "syntax": "postcss-scss",
   "input": "assets/libs/primus.css",
