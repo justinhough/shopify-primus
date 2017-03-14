@@ -1,0 +1,48 @@
+/* ============================================================================
+  Shopify Primus - PostCSS Starter Theme
+
+  Copyright 2017 Justin Hough.
+  Author Justin Hough @jrhough
+  Built with PostCSS - http://postcss.org/
+
+  Included with this starer kit:
+    - Partials are compiled by PostCSS and outputted into the assets folder.
+    - Contains variables, helpers, mixins and starter classes for a generic theme. Change or add as needed.
+    - This file already contains CSS Normalize and Autoprefixer (runs on compile)
+
+    - @TODO: Create SVG icons
+    - @TODO: Incorporate a grid or layout system
+    - @TODO: Build liquid theme layout, templates, and partials
+============================================================================== */
+
+@import "base/config";
+
+// Styles
+// @import "styles/style1";
+
+// Layouts
+@import "layout/grid";
+@import "layout/banners";
+@import "layout/cart";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/page";
+
+// Patterns
+@import "patterns/breadcrumbs";
+@import "patterns/collections";
+@import "patterns/comments";
+@import "patterns/forms";
+@import "patterns/gift-card";
+@import "patterns/header-nav";
+@import "patterns/products";
+@import "patterns/search";
+@import "patterns/side-nav";
+@import "patterns/sidebar";
+
+// Utilities
+@import "utils/animations";
+@import "utils/clearfix";
+@import "utils/mixins";
+@import "utils/normalize";
+@import "utils/type";
