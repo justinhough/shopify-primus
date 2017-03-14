@@ -11,8 +11,8 @@
     "postcss-font-magician"
   ],
   "syntax": "postcss-scss",
-  "input": "styles/theme-name.css",
-  "output": "theme/assets/theme-name.css.liquid",
+  "input": "assets/libs/primus.css",
+  "output": "assets/primus.css.liquid",
   "local-plugins": true,
   "autoprefixer": {
     "browsers": "> 5%"
