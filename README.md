@@ -31,32 +31,6 @@ It's preconfigured so that you can use the familiar syntax of variables, mixins,
 - [precss](https://github.com/jonathantneal/precss)
 
 
-## TODOS
-- [ ] sync with Shopify DEV store
-- [ ] add basic layout and snippets for basic page / component structure
-- [ ] include locales (languages) for de, en, es, fr, pt-BR, and pt-PT
-- [ ] build templates for:
-  - [ ] home
-  - [ ] article
-  - [ ] blog
-  - [ ] cart
-  - [ ] collection
-  - [ ] collection list
-  - [ ] gift card
-  - [ ] contact
-  - [ ] page
-  - [ ] product
-  - [ ] search
-  - [ ] customer - account
-  - [ ] customer - activate account
-  - [ ] customer - addresses
-  - [ ] customer - login
-  - [ ] customer - order
-  - [ ] customer - register
-  - [ ] customer - reset password
-  - [ ] 404
-- [ ] basic theme testing
-
 ## Support
 
 Get involved and follow along with updates.
