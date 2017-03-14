@@ -1,0 +1,24 @@
+{
+  "name": "shopify-primus",
+  "version": "1.0.0",
+  "description": "Primus is a Shopify Starter Theme built with PostCSS (and other magical things)",
+  "keywords": "",
+  "main": [
+    "assets/*",
+    "config/*",
+    "layout/*",
+    "snippets/*",
+    "templates/*",
+    "locales/*"
+  ],
+  "authors": "justin hough <justin@justinhough.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/justinhough/shopify-primus",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
