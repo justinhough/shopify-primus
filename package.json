@@ -39,7 +39,7 @@
   },
   "watches": {
     "css": [
-      "styles/**/*.css"
+      "assets/libs/**/*.css"
     ]
   }
 }
