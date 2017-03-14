@@ -8,7 +8,7 @@ It's preconfigured so that you can use the familiar syntax of variables, mixins,
 ## Get Started
 
 - Download the latest release
-- Clone the repo git clone https://github.com/justinhough/postcss-shopify-theme-starter.git and install dependencies (`npm install`)
+- Clone the repo `git clone https://github.com/justinhough/postcss-shopify-theme-starter.git` and install dependencies `npm install`.
 
 
 ## Plugins
