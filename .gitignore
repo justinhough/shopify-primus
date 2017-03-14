@@ -88,4 +88,4 @@ typings/
 
 # Repository specifc ignores
 theme/assets/*.css.liquid
-ignore/
+_ignore/
