@@ -1,3 +1,119 @@
+@import "../base/config";
+@import "../utils/utils";
 /* ============================================================================
-// Navigation
+// Grid
 // ============================================================================ */
+
+
+.$container-class {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0;
+
+  &-full {
+    max-width: 100%;
+  }
+
+  .$row-class {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+}
+
+@define-extend column-base {
+  padding: 0 0.3125rem;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0
+}
+
+@define-mixin grid-flex-creator $class, $push, $pull, $columns, $width: 1440 {
+  @for $i from 1 through $columns {
+    .$(class)-$i {
+      @if $columns == 24 {
+        @extend column-base;
+        flex-basis: calc(100 / $columns * $i * 1%);
+
+        &:before,
+        &:after {
+          @extend cf-before-after;
+        }
+
+        &:after {
+          @extend cf-after;
+        }
+      }
+
+    }
+
+    .$(push)-$i {
+      margin-$(lang-front): calc(100 / $columns * $i * 1%);
+    }
+
+    .$(pull)-$i {
+      margin-$(lang-front): calc(100 / $columns * $i * -1%);
+    }
+  }
+}
+
+
+@define-mixin adjust-flex-grid $columns, $columns-count, $class, $push, $full-width, $negate-push {
+
+  %$(full-width) {
+    //@include rem(padding-left, ($gutter / 2) !important);
+    //@include rem(padding-right, ($gutter / 2) !important);
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  %$(negate-push) {
+    margin-$(lang-front): 0; // negate
+  }
+
+  @for $i from $columns through $columns-count {
+
+    @if $i < $columns {
+
+      .$(class)-$i {
+        @extend %$(full-width);
+      }
+
+      .$(push)-$i {
+        @extend %$(negate-push);
+      }
+    }
+    @if $i > $columns {
+
+      .$(class)-$i {
+        @extend %$(full-width);
+      }
+
+      .$(push)-$i {
+        @extend %$(negate-push);
+      }
+    }
+  }
+}
+
+
+
+@mixin grid-flex-creator col, ph, pl, 24;
+
+@media (--medium-viewport) {
+  @mixin adjust-flex-grid 12, 24, col, ph, tablet-full-width, tablet-no-push-pull;
+  @mixin grid-flex-creator tcol, tph, tpl, 12;
+}
+
+@media (--small-viewport) {
+  @mixin adjust-flex-grid 12, 24, col, ph, mobile-full-width, mobile-no-push-pull;
+  @mixin adjust-flex-grid 6, 12, tcol, tph, mobile-full-width, mobile-no-push-pull;
+  @mixin grid-flex-creator mcol, mph, mpl, 6;
+}
