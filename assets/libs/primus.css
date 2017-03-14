@@ -15,7 +15,8 @@
     - @TODO: Build liquid theme layout, templates, and partials
 ============================================================================== */
 
-@import "base/config";
+// Base
+//@import "base/config";
 
 // Styles
 // @import "styles/style1";
@@ -41,8 +42,8 @@
 @import "patterns/sidebar";
 
 // Utilities
-@import "utils/animations";
-@import "utils/clearfix";
-@import "utils/mixins";
-@import "utils/normalize";
-@import "utils/type";
+//@import "utils/animations";
+//@import "utils/clearfix";
+//@import "utils/mixins";
+//@import "utils/normalize";
+//@import "utils/type";
