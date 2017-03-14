@@ -40,16 +40,8 @@
     .$(class)-$i {
       @if $columns == 24 {
         @extend column-base;
+        @extend %clearfix;
         flex-basis: calc(100 / $columns * $i * 1%);
-
-        &:before,
-        &:after {
-          @extend cf-before-after;
-        }
-
-        &:after {
-          @extend cf-after;
-        }
       }
 
     }
