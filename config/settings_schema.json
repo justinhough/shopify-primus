@@ -1,0 +1,47 @@
+[
+  {
+    "name": "theme_info",
+    "logo": "https://example.com/image-256x256.png",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Primus"
+      },
+      {
+        "type": "paragraph",
+        "content": "v1.0.0"
+      },
+      {
+        "type": "paragraph",
+        "content": "Description of Primus Theme."
+      },
+      {
+        "type": "paragraph",
+        "content": "Review [Primus's documentation](https:\/\/github.com\/justinhough\/shopify-primus) for any development help."
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "General colors"
+      },
+      {
+        "type": "color",
+        "id": "color_primary",
+        "label": "Primary",
+        "default": "#a00",
+        "info": "Used for text links, and primary buttons"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary",
+        "label": "Secondary",
+        "default": "#eee",
+        "info": "Used for secondary buttons"
+      }
+    ]
+  }
+]

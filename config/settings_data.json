@@ -1,0 +1,9 @@
+{
+  "current": "Default",
+  "presets": {
+    "Default": {
+      "color_primary": "#333",
+      "color_secondary": "#ddd"
+    }
+  }
+}
