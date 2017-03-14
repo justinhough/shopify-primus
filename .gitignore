@@ -89,3 +89,5 @@ typings/
 # Repository specifc ignores
 theme/assets/*.css.liquid
 _ignore/
+stats.json
+primus.css
