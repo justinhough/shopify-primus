@@ -1,17 +1,17 @@
 {
-  "name": "postcss-shopify-theme-starter",
+  "name": "shopify-primus",
   "version": "1.0.0",
-  "description": "A Shopify theme starter with Timber and PostCSS (allows for partials and other magic)",
-  "author": "justin hough",
+  "description": "Primus is a Shopify Starter Theme built with PostCSS (and other magical things)",
+  "author": "justin hough <justin@justinhough.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/justinhough/postcss-shopify-theme-starter.git"
+    "url": "https://github.com/justinhough/shopify-primus.git"
   },
   "bugs": {
-    "url": "https://github.com/justinhough/postcss-shopify-theme-starter/issues"
+    "url": "https://github.com/justinhough/shopify-primus/issues"
   },
-  "homepage": "https://github.com/justinhough/postcss-shopify-theme-starter",
+  "homepage": "https://github.com/justinhough/shopify-primus",
   "devDependencies": {
     "autoprefixer": "^6.7.2",
     "npm-run-series": "^1.0.0",
