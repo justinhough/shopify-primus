@@ -38,6 +38,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "postcss -c postcss.config.json",
+    "postcss": "cssstats assets/primus.css.liquid docs/data/stats.json",
     "prestart": "npm-run-series css",
     "start": "parallelshell 'rerun-script'"
   },
