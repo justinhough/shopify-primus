@@ -33,13 +33,13 @@
     "postcss-simple-vars": "^3.0.0",
     "postcss-strip-inline-comments": "^0.1.5",
     "precss": "^1.4.0",
-    "rerun-script": "^0.6.0"
+    "rerun-script": "^0.6.0",
+    "stylelint": "^7.9.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "precss": "stylelint assets/libs/**/*.css --syntax scss",
     "css": "postcss -c postcss.config.json",
-    "postcss": "cssstats assets/primus.css.liquid docs/data/stats.json",
-    "prestart": "npm-run-series css",
     "start": "parallelshell 'rerun-script'"
   },
   "watches": {
