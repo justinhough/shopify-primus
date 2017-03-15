@@ -40,11 +40,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "precss": "stylelint assets/libs/**/*.css --syntax scss",
     "css": "postcss -c postcss.config.json",
+    "stats": "cssstats assets/primus.css.liquid docs/data/stats.json",
+    "prestart": "npm-run-series css stats",
     "start": "parallelshell 'rerun-script'"
   },
   "watches": {
     "css": [
       "assets/libs/**/*.css"
+    ],
+    "stats": [
+      "assets/primus.css.liquid"
     ]
   }
 }
