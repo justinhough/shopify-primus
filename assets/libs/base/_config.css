@@ -7,17 +7,15 @@
 $colorPrimary: $(color_primary);
 $colorSecondary: $(color_secondary);
 
-
 // General Media Queries
 // ----------------------
 @custom-media --small-viewport (max-width: 601px);
 @custom-media --medium-viewport (max-width: 768px);
 @custom-media --large-viewport (max-width: 992px);
 
-
 // Grid
 // ----------------------
-$prefix: ;
+$prefix:;
 $container-class: $(prefix)cr;
 $row-class: $(prefix)rw;
 

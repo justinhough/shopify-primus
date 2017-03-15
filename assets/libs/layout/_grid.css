@@ -1,9 +1,8 @@
-@import "../base/config";
-@import "../utils/utils";
 /* ============================================================================
 // Grid
 // ============================================================================ */
-
+@import "../base/config";
+@import "../utils/utils";
 
 .$container-class {
   box-sizing: border-box;
@@ -32,7 +31,7 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-grow: 0;
-  flex-shrink: 0
+  flex-shrink: 0;
 }
 
 @define-mixin grid-flex-creator $class, $push, $pull, $columns, $width: 1440 {
@@ -41,9 +40,9 @@
       @if $columns == 24 {
         @extend column-base;
         @extend %clearfix;
+
         flex-basis: calc(100 / $columns * $i * 1%);
       }
-
     }
 
     .$(push)-$i {
@@ -55,7 +54,6 @@
     }
   }
 }
-
 
 @define-mixin adjust-flex-grid $columns, $columns-count, $class, $push, $full-width, $negate-push {
 
@@ -71,9 +69,7 @@
   }
 
   @for $i from $columns through $columns-count {
-
     @if $i < $columns {
-
       .$(class)-$i {
         @extend %$(full-width);
       }
@@ -82,8 +78,8 @@
         @extend %$(negate-push);
       }
     }
-    @if $i > $columns {
 
+    @if $i > $columns {
       .$(class)-$i {
         @extend %$(full-width);
       }
@@ -94,8 +90,6 @@
     }
   }
 }
-
-
 
 @mixin grid-flex-creator col, ph, pl, 24;
 
