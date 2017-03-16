@@ -17,8 +17,6 @@
     "postcss-discard-duplicates"
   ],
   "syntax": "postcss-scss",
-  "input": "assets/libs/primus.css",
-  "output": "assets/primus.css.liquid",
   "local-plugins": true,
   "autoprefixer": {
     "browsers": "> 5%"
