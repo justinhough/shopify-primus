@@ -91,3 +91,4 @@ theme/assets/*.css.liquid
 _ignore/
 stats.json
 test-primus.css
+config.yml
