@@ -16,9 +16,8 @@
 ============================================================================== */
 
 // Base
-//@import "base/config";
-
-@import "patterns/typography";
+@import "utils/normalize";
+@import "utils/typography";
 
 // Styles
 // @import "styles/style1";

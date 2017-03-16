@@ -130,3 +130,50 @@ h6 {
 
   @extend %typography;
 }
+
+/* Text Alignment Class Helpers */
+.txt {
+  &--l {
+    text-align: left;
+  }
+
+  &--c {
+    text-align: center;
+  }
+
+  &--r {
+    text-align: right;
+  }
+}
+
+@media (--medium-viewport) {
+  .m {
+    &-txt--l {
+      text-align: left;
+    }
+
+    &-txt--c {
+      text-align: center;
+    }
+
+    &-txt--r {
+      text-align: right;
+    }
+  }
+}
+
+@media (--small-viewport) {
+  .s {
+    &-txt--l {
+      text-align: left;
+    }
+
+    &-txt--c {
+      text-align: center;
+    }
+
+    &-txt--r {
+      text-align: right;
+    }
+  }
+}
