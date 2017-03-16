@@ -1,0 +1,27 @@
+development:
+  password: password_goes_here
+  theme_id: "theme_id_goes_here"
+  store: store_name_goes_here.myshopify.com
+  # proxy: http://localhost:4000
+  ignore_files:
+    # - config/settings_data.json
+    - _ignore/
+    - .git/
+    - assets/libs
+    - node_modules/
+    - .DS_Store
+    - .editorconfig
+    - .gitignore
+    - .stylelintrc
+    - bower.json
+    - LICENSE.md
+    - package.json
+    - postcss.config.json
+    - README.md
+
+production:
+  password: password_goes_here
+  theme_id: "theme_id_goes_here"
+  store: can-i-buy-a-feeling.myshopify.com
+  timeout: 60s
+  readonly: true
