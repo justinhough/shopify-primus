@@ -44,7 +44,8 @@
     "css": "postcss -c postcss.config.json -o assets/primus.css.liquid assets/libs/primus.css",
     "postcss": "postcss -c postcss.config.json -o docs/test-primus.css assets/libs/primus.css",
     "stats": "cssstats assets/primus.css.liquid docs/data/stats.json",
-    "prestart": "npm-run-series css stats",
+    "theme": "theme watch --config=./config.yml --dir=./",
+    "prestart": "npm-run-series css stats theme",
     "start": "parallelshell 'rerun-script'"
   },
   "watches": {
