@@ -1,0 +1,132 @@
+/* ============================================================================
+// Typography
+// ============================================================================ */
+@import "../base/config";
+@import "../utils/utils";
+
+:root {
+  --modular-scale: 1.125;
+}
+
+%typography {
+  font-family: $default-font-family;
+  font-weight: 200;
+  line-height: $default-line-height;
+  margin: calc(-1msu * 1rem) 0;
+}
+
+/* Headings */
+h1 {
+  font-size: calc(10msu * 1rem);
+  font-weight: 400;
+
+  @extend %typography;
+}
+
+h2 {
+  font-size: calc(8msu * 1rem);
+  font-weight: 400;
+
+  @extend %typography;
+}
+
+h3 {
+  font-size: calc(6msu * 1rem);
+  font-weight: 400;
+
+  @extend %typography;
+}
+
+h4 {
+  font-size: calc(4msu * 1rem);
+  font-weight: 400;
+
+  @extend %typography;
+}
+
+h5 {
+  font-size: calc(2msu * 1rem);
+  font-weight: 400;
+
+  @extend %typography;
+}
+
+h6 {
+  font-size: calc(1msu * 1rem);
+  font-weight: 400;
+
+  @extend %typography;
+}
+
+/* Font Size Class Helpers */
+.f--3 {
+  font-size: calc(-3msu * 1rem);
+
+  @extend %typography;
+}
+
+.f--2 {
+  font-size: calc(-2msu * 1rem);
+
+  @extend %typography;
+}
+
+.f--1 {
+  font-size: calc(-1msu * 1rem);
+
+  @extend %typography;
+}
+
+.f-0 {
+  font-size: calc(0msu * 1rem);
+
+  @extend %typography;
+}
+
+.f-1 {
+  font-size: calc(1msu * 1rem);
+
+  @extend %typography;
+}
+
+.f-2 {
+  font-size: calc(2msu * 1rem);
+
+  @extend %typography;
+}
+
+.f-3 {
+  font-size: calc(3msu * 1rem);
+
+  @extend %typography;
+}
+
+.f-4 {
+  font-size: calc(5msu * 1rem);
+
+  @extend %typography;
+}
+
+.f-5 {
+  font-size: calc(7msu * 1rem);
+
+  @extend %typography;
+}
+
+.f-6 {
+  font-size: calc(10msu * 1rem);
+
+  @extend %typography;
+}
+
+.f-7 {
+  font-size: calc(12msu * 1rem);
+
+  @extend %typography;
+}
+
+.f-8 {
+  font-size: calc(14msu * 1rem);
+
+  @extend %typography;
+}

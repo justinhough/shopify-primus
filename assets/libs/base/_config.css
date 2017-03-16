@@ -7,6 +7,12 @@
 $colorPrimary: $(color_primary);
 $colorSecondary: $(color_secondary);
 
+// Typography
+// ----------------------
+$default-font-size: 16px;
+$default-line-height: 1.414;
+$default-font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 // General Media Queries
 // ----------------------
 @custom-media --small-viewport (max-width: 601px);
