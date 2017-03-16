@@ -90,4 +90,4 @@ typings/
 theme/assets/*.css.liquid
 _ignore/
 stats.json
-primus.css
+test-primus.css
