@@ -1,0 +1,47 @@
+<!-- /templates/page.liquid -->
+<div class="cr">
+
+  <div class="rw">
+
+    <div class="col-24">
+
+      <h1>{{ 'homepage.sections.frontpage_title' | t }}</h1>
+
+      {% comment %}
+        Loop through products in your Frontpage collection.
+        This collection is created by default, but you must add products to it.
+      {% endcomment %}
+      {% for product in collections.frontpage.products limit:4 %}
+
+        {% comment %}
+          Change the grid item width by using classes from the grid in
+          the grid_item_width variable.
+
+          Example:
+            - {% assign grid_item_width = 'col-6 tcol-4 mcol-3' %}
+        {% endcomment %}
+        {% assign grid_item_width = 'col-6 tcol-4 mcol-3' %}
+        <div class="rw">
+          {% include 'product-grid-item' %}
+        </div>
+
+      {% else %}
+        {% comment %}
+          For onboarding new users to your theme, we add some default products and onboarding tutorials to help populate their store
+        {% endcomment %}
+        {% unless emptyState %}
+          {{ 'theme-onboarding.css' | global_asset_url | stylesheet_tag }}
+          {% assign emptyState = true %}
+        {% endunless %}
+
+        <div class="rw">
+          {% include 'onboarding-featured-products' %}
+        </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</div>
