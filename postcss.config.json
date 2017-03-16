@@ -1,7 +1,10 @@
 {
   "use": [
-    "postcss-simple-vars",
+    "postcss-partial-import",
+    "postcss-modular-scale-unit",
     "precss",
+    "postcss-simple-vars",
+    "postcss-conditionals",
     "postcss-strip-inline-comments",
     "postcss-short",
     "postcss-shopify-settings-variables",
