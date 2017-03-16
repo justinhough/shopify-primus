@@ -18,6 +18,8 @@
 // Base
 //@import "base/config";
 
+@import "patterns/typography";
+
 // Styles
 // @import "styles/style1";
 
@@ -30,20 +32,19 @@
 @import "layout/page";
 
 // Patterns
-@import "patterns/breadcrumbs";
-@import "patterns/collections";
-@import "patterns/comments";
-@import "patterns/forms";
-@import "patterns/gift-card";
-@import "patterns/header-nav";
-@import "patterns/products";
-@import "patterns/search";
-@import "patterns/side-nav";
-@import "patterns/sidebar";
+//@import "patterns/breadcrumbs";*/
+//@import "patterns/collections";
+//@import "patterns/comments";
+//@import "patterns/forms";
+//@import "patterns/gift-card";
+//@import "patterns/header-nav";
+//@import "patterns/products";
+//@import "patterns/search";
+//@import "patterns/side-nav";
+//@import "patterns/sidebar";
 
 // Utilities
 //@import "utils/animations";
 //@import "utils/clearfix";
 //@import "utils/mixins";
 //@import "utils/normalize";
-//@import "utils/type";
