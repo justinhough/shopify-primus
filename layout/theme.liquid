@@ -31,13 +31,29 @@
 
 </head>
 
-<body>
+<body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
 
-  <main class="wrapper main-content" role="main">
+  <!-- begin NavDrawer -->
+  {% include 'nav-drawer' %}
 
-    {{ content_for_layout }}
+  <div id="PageWrapper">
+    <!-- begin site-header -->
+    {% include 'header' %}
 
-  </main>
+    <!-- begin nav-bar -->
+    {% include 'site-nav' %}
+
+    <!-- begin main-content -->
+    <main class="main-content" role="main">
+
+      {{ content_for_layout }}
+
+    </main>
+
+    <!-- begin site-footer -->
+    {% include 'footer' %}
+
+  </div>
 
   {{ 'primus.js' | asset_url | script_tag }}
 
